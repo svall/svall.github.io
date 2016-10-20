@@ -18,6 +18,18 @@ hr {
   width: 300px;
 }
 
+.horizontalLine {
+  border-bottom: : 2px solid black;
+  position: absolute;
+  height: 80px;
+  width: 2px;
+  display: inline-block;
+}
+
+#horizL1 {
+
+}
+
 .verticalLine {
   border-left: 2px solid black;
   position: absolute;
@@ -26,11 +38,11 @@ hr {
   display: inline-block;
 }
 
-#line1 {
+#vertL1 {
   left: 429px;
 }
 
-#line3 {
+#vertL3 {
   right: 427px;
 }
 
@@ -52,7 +64,7 @@ hr {
   margin: 70px 40px;
   width: 200px;
   height: 200px;
-  border: 5px solid black;
+  border: 2px solid black;
   font-size: 30px;
   border-radius: 50%;
   line-height: 120px;
@@ -86,7 +98,7 @@ hr {
 }
 
 .formButton {
-  width: 50px;
-  height: 20px;
-  font-size: 15px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
 }
