@@ -3,80 +3,43 @@ console.log('js connected');
 $(function() {
   console.log("Dom ok");
 
-  // action window scroll to next veiew - About Me
+  // action window scroll to next veiew on click on bubble
   $('#bubbleAboutMe').on('click', (event) => {
     $('body').animate({
       scrollTop: $('#bubbleAboutMe').offset().top -50
     }, 500);
     $('#modalAboutMe').css({'visibility': 'visible'});
-    // About Me modal activation
-    // $('#bubbleAboutMe').on('mouseover', (function(event) {
-    //   // console.log('on about me bubble');
-    //   $('#modalAboutMe').css({'visibility': 'visible'});
-    // }));
-    // $('#bubbleAboutMe').on('mouseout', (function(event) {
-    //   // console.log('on about me bubble');
-    //   $('#modalAboutMe').css({'visibility': 'hidden'});
-    // }));
-    });
-    $('#bubbleAboutMe').on('mouseover', (function(event) {
-      // console.log('on about me bubble');
-      $('#modalAboutMe').css({'visibility': 'visible'});
-    }));
-      // $('#bubbleAboutMe').on('mouseout', (function(event) {
-      //   // console.log('on about me bubble');
-      //   $('#modalAboutMe').css({'visibility': 'hidden'});
-      // }));
-    $('#bubbleProjects').on('mouseover', (function(event) {
-      // console.log('on about me bubble');
-      $('#modalAboutMe').css({'visibility': 'hidden'});
-    }));
+  });
+  $('#bubbleProjects').on('click', (event) => {
+    $('body').animate({
+      scrollTop: $('#bubbleProjects').offset().top -50
+    }, 500);
+    $('#modalProjects').css({'visibility': 'visible'});
+  });
+  $('#bubbleContact').on('click', (event) => {
+    $('body').animate({
+      scrollTop: $('#bubbleContact').offset().top -50
+    }, 500);
+    $('#modalContact').css({'visibility': 'visible'});
+  });
+  // Modal response to hovering over different bubbles
+  $('#bubbleProjects').on('mouseover', (function(event) {
+    $('#modalAboutMe').css({'visibility': 'hidden'});
+    $('#modalContact').css({'visibility': 'hidden'});
+    $('#modalProjects').css({'visibility': 'visible'});
+  }));
+  $('#bubbleContact').on('mouseover', (function(event) {
+    $('#modalAboutMe').css({'visibility': 'hidden'});
+    $('#modalProjects').css({'visibility': 'hidden'});
+    $('#modalContact').css({'visibility': 'visible'});
+  }));
+  $('#bubbleAboutMe').on('mouseover', (function(event) {
+    $('#modalProjects').css({'visibility': 'hidden'});
+    $('#modalContact').css({'visibility': 'hidden'});
+    $('#modalAboutMe').css({'visibility': 'visible'});
+  }));
 
 
 
-  // action window scroll to next veiew - Projects
-  // $('#bubbleProjects').on('click', (event) => {
-  //   $('body').animate({
-  //     scrollTop: $('#bubbleProjects').offset().top -50
-  //   }, 500);
-  //   // Projects modal activation
-  //   $('#bubbleProjects').on('mouseover', (function(event) {
-  //     // console.log('on projects bubble');
-  //     $('#modalProjects').css({'visibility': 'visible'});
-  //   }));
-  //   $('#bubbleAboutMe').on('mouseout', (function(event) {
-  //     // console.log('on about me bubble');
-  //     $('#modalAboutMe').css({'visibility': 'hidden'});
-  //   }));
-    // $('#bubbleProjects').on('mouseout', (function(event) {
-    //   // console.log('on projects bubble');
-    //   $('#modalProjects').css({'visibility': 'hidden'});
-    // }));
-    // $('#bubbleProjects').on('mouseover', (function(event) {
-    //   // console.log('on about me bubble');
-    //   $('#modalAboutMe').css({'visibility': 'hidden'});
-    // }));
-  // });
-
-  // // action window scroll to next veiew - Contact
-  // $('#bubbleContact').on('click', (event) => {
-  //   $('body').animate({
-  //     scrollTop: $('#bubbleAboutMe').offset().top -50
-  //   }, 500);
-  //   $('#modalContact').css({'visibility': 'visible'});
-  //   // Contact modal activation
-  //   $('#bubbleContact').on('mouseover', (function(event) {
-  //     // console.log('on contact bubble');
-  //     $('#modalContact').css({'visibility': 'visible'});
-  //   }));
-  //   $('#bubbleContact').on('mouseout', (function(event) {
-  //     // console.log('on contact bubble');
-  //     $('#modalContact').css({'visibility': 'hidden'});
-  //   }));
-    // $('#bubbleContact').on('mouseover', (function(event) {
-    //   // console.log('on about me bubble');
-    //   $('#modalAboutMe').css({'visibility': 'hidden'});
-    // }));
-  // });
 
 });
