@@ -2,9 +2,53 @@
 <html>
 <head>
   <title>Susana Isaza</title>
-</head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" charset="utf-8"></script>
+  <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"></head>
 <body>
-  <h1>Susana Isaza</h1>
+  <h2 id="fixedLetters">- SI -</h2>
+  <main class="main">
+    <div class="bubbleContainer">
+      <h1>Susana Isaza</h1>
+      <!-- <img id="verticalImg" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG1cGRG1rszngzcC0QBBxdgvMudUZdUhHJJjPXAtveRpMZLZ2XjphFyw" alt=""> -->
+      <div class="verticalLine" id="line1"></div>
+      <div class="verticalLine" id="line2"></div>
+      <div class="verticalLine" id="line3"></div>
+      <hr>
+      <div class="bubble" id="bubbleAboutMe">
+        <h3>About Me</h3>
+      </div>
+      <div class="bubble" id="bubbleProjects">
+        <h3>Projects</h3>
+      </div>
+      <div class="bubble" id="bubbleContact">
+        <h3>Contact</h3>
+      </div>
+    </div>
 
+    <div class="modalContainer">
+      <div class="modals" id="modalAboutMe">
+        <p>dolor sit amet, volutpat vestibulum eget, est pellentesque. Euismod ultricies nulla ligula montes semper, eget nulla ullamcorper ultrices, eget pellentesque eget libero mollis sit, odio dolor feugiat aliquam sed aliquam. Ante etiam mus justo sapien lobortis. In velit ridiculus eget maecenas, aliquet suspendisse ut pellentesque. Gravida et id blandit pretium scelerisque dolor. Dictum mauris quis nam. Sapien mauris semper. Eget accumsan felis. Amet platea sed dui egestas auctor, ullamcorper feugiat lacus. Mattis donec pellentesque nulla sit odio nullam.</p>
+      </div>
+      <div class="modals" id="modalProjects">
+        <p>Lorem ipsum dolor sit amet, volutpat vestibulum eget, est pellentesque. Euismod ultricies nulla ligula montes semper, eget nulla ullamcorper ultrices, eget pellentesque eget libero mollis sit, odio dolor feugiat aliquam sed aliquam. Ante etiam mus justo sapien lobortis. In velit ridiculus eget maecenas, aliquet suspendisse ut pellentesque. Gravida et id blandit pretium scelerisque dolor. Dictum mauris quis nam. Sapien mauris semper. Eget accumsan felis. Amet platea sed dui egestas auctor, ullamcorper feugiat lacus. Mattis donec pellentesque nulla sit odio nullam.</p>
+      </div>
+      <div class="modals" id="modalContact">
+        <form action="submit" method="get" accept-charset="utf-8">
+          <label>Enter Name:
+            <input type="text" name="name">
+          </label><br><br>
+          <label>Enter Email:
+            <input type="text" name="email">
+          </label><br><br>
+          <label>Comment:
+            <textarea name="textarea"></textarea>
+          </label><br><br>
+          <button type="submit" class="formButton">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
