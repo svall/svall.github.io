@@ -55,46 +55,105 @@ hr {
 }
 
 .bubbleContainer {
-  background-color: lightgreen;
+  background-color: lightgrey;
   text-align: center;
 }
 
+/*BUTTONS*/
 .bubble {
   display: inline-block;
-  margin: 70px 40px;
+  margin: 70px 40px 30px 40px;
   width: 200px;
   height: 200px;
-  border: 2px solid black;
+  border: 2px solid #FAFAFA;
   font-size: 30px;
   border-radius: 50%;
   line-height: 120px;
 }
 
+.bubbleHeaders {
+  color: #FAFAFA;
+}
+
+.bubbleHeaders:hover {
+  color: #222;
+}
+.bubble:hover {
+  border: 2px solid #222;
+}
+
+/*MODALS*/
 .modalContainer {
+  /*background-color: blue;*/
+  text-align: center;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .modals{
   visibility: hidden;
+  /*margin: auto;*/
   position: absolute;
-  width: 600px;
+  /*width: 95%;*/
   padding: 20px;
-  left: 30%;
   font-size: 25px;
   border: 1px solid black;
+  overflow-y: scroll;
 }
 
+/*----ABOUT ME MODAL----*/
 #modalAboutMe {
   /*background-color: red;*/
+  width: 700px;
 }
 
+/*----PROJECTS MODAL----*/
 #modalProjects {
   /*background-color: blue;*/
+  width: 800px;
+  height: 500px;
+  /*overflow-y: scroll;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+}
+.projectContainer {
+  /*background-color: blue;*/
+  /*overflow-y: scroll;*/
+}
+.eachProject {
+  /*overflow-y: scroll;*/
+  /*background-color: red;*/
+  border: 1px dotted black;
+  display: inline-block;
+  margin: 5px;
+  height: 300px;
+  width: 350px;
+}
+.projHeader {
+  margin: 30px 35px;
+}
+.projectDescr {
+  display: inline-block;
+  width: 400px;
+  margin: auto 35px;
+}
+.imgProject {
+  display: inline-block;
+  height: 300px;
+  width: 350px;
+  /*margin: 0 auto;*/
 }
 
+/*----CONTACT MODAL----*/
 #modalContact {
   /*background-color: orange;*/
-  padding: 20px;
+  width: 450px;
+  border: none;
+  margin-top: 30px;
 }
 
 .formButton {
