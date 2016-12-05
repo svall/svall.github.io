@@ -61,6 +61,7 @@ hr {
 
 /*BUTTONS*/
 .bubble {
+  /*visibility: hidden;*/
   display: inline-block;
   margin: 70px 40px 30px 40px;
   width: 200px;
@@ -99,7 +100,7 @@ hr {
   /*width: 95%;*/
   padding: 20px;
   font-size: 25px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   overflow-y: scroll;
 }
 
@@ -143,10 +144,17 @@ hr {
 }
 .imgProject {
   display: inline-block;
-  height: 300px;
-  width: 350px;
+  height: 60%;
+  width: 60%;
+  /*height: 300px;*/
+  /*width: 350px;*/
   /*margin: 0 auto;*/
 }
+.simonSaysImg {
+  height: 50%;
+  width: 50%;
+}
+
 
 /*----CONTACT MODAL----*/
 #modalContact {
@@ -160,4 +168,14 @@ hr {
   width: 70px;
   height: 40px;
   font-size: 20px;
+}
+
+.commentLabel {
+  /*height: 100px;*/
+  width: 50px;
+}
+
+#contactComment {
+  width: 200px;
+  height: 20px;
 }

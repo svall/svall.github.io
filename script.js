@@ -3,6 +3,13 @@ console.log('js connected');
 $(function() {
   console.log("Dom ok");
 
+  // animate bubbles initial show:
+  // function displayBubbles() {
+  //   setTimeout(
+  //     ($('#bubbleAboutMe').css({'visibility': 'visible'})), 1000)
+  // };
+  // displayBubbles();
+
   // action window scroll to next veiew on click on bubble
   $('#bubbleAboutMe').on('click', (event) => {
     $('body').animate({
