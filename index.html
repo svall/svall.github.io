@@ -20,7 +20,7 @@
   <main class="main">
     <div class="bubbleContainer">
       <div class="titleContainer">
-        <h1 class="nameTitle">Susana Isaza</h1>
+        <div class="nameTitle">Susana Isaza</div>
         <!-- <img id="verticalImg" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG1cGRG1rszngzcC0QBBxdgvMudUZdUhHJJjPXAtveRpMZLZ2XjphFyw" alt=""> -->
         <!-- <div class="horizontalLine" id="horizL1"></div> -->
         <!-- <div class="verticalLine" id="vertL1"></div> -->
@@ -43,8 +43,16 @@
 
     <div class="modalContainer">
       <div class="modals" id="modalAboutMe">
-        <p>dolor sit amet, volutpat vestibulum eget, est pellentesque. Euismod ultricies nulla ligula montes semper, eget nulla ullamcorper ultrices, eget pellentesque eget libero mollis sit, odio dolor feugiat aliquam sed aliquam. Ante etiam mus justo sapien lobortis. In velit ridiculus eget maecenas, aliquet suspendisse ut pellentesque. Gravida et id blandit pretium scelerisque dolor. Dictum mauris quis nam. Sapien mauris semper. Eget accumsan felis. Amet platea sed dui egestas auctor, ullamcorper feugiat lacus. Mattis donec pellentesque nulla sit odio nullam.</p>
-      </div>
+        <p>My name is Susana, I am a full-stack developer currently based in NYC.
+        After being in the business world since graduating college,
+        I decided to take time to explore different fields I was very passionate about,
+        jumping head first into the Web Development world.
+        <br>
+        On a different note, I consider myself very lucky to have grown up in
+        different countries getting to know people from diverse cultures.
+        I'm positive in saying these experiences have definitely fueled my passion for travel!
+        </p>
+        </div>
       <div class="modals" id="modalProjects">
         <div class="projectContainer">
           <div class="eachProject">
@@ -70,17 +78,20 @@
         </div>
       </div>
       <div class="modals" id="modalContact">
-        <form action="submit" method="get" accept-charset="utf-8">
-          <label>Enter Name:
-            <input type="text" name="name">
+        <form action="mailto:susisaza@gmail.com" method="post" enctype="text/plain">
+          <label>Name:<br>
+            <input type="text" name="name" class="inputTitle">
           </label><br><br>
-          <label>Enter Email:
-            <input type="text" name="email">
+          <label>Email:<br>
+            <input type="text" name="email" class="inputTitle">
           </label><br><br>
-          <label class="commentLabel">Comment:
+          <label class="commentLabel">Comments:<br>
             <textarea name="textarea" id="contactComment"></textarea>
           </label><br><br>
-          <button type="submit" class="formButton">Submit</button>
+          <div class="formButtonContainer">
+            <button type="submit" class="formButton">Send</button>
+            <button type="reset" class="formButton">Reset</button>
+          </div>
         </form>
       </div>
     </div>

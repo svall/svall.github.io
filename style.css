@@ -62,18 +62,22 @@ hr {
 }
 
 .titleContainer {
-  background-color: pink;
-  padding-left: 100px;
-  padding-right: 100px;
+  /*background-color: pink;*/
+  margin: 100px auto;
+  padding-left: 180px;
+  padding-right: 180px;
 }
 
 .nameTitle {
-  border: 1px solid black;
+  opacity: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /*height: 250px;*/
+  font-size: 150px;
 }
 
-
 .bubbleContainer {
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   text-align: center;
 }
 
@@ -101,18 +105,21 @@ hr {
 /*BUTTONS*/
 .bubble {
   /*visibility: hidden;*/
+  opacity: 0;
   display: inline-block;
-  margin: 70px 40px 30px 40px;
+  margin: 0px 40px 30px 40px;
   width: 200px;
   height: 200px;
-  border: 2px solid #FAFAFA;
+  /*border: 2px solid #FAFAFA;*/
+  border: 2px solid #999999;
   font-size: 30px;
   border-radius: 50%;
   line-height: 120px;
 }
 
 .bubbleHeaders {
-  color: #FAFAFA;
+  /*color: #FAFAFA;*/
+  color: #999999;
 }
 
 .bubbleHeaders:hover {
@@ -160,6 +167,7 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 25px;
   /*justify-content: center;*/
 }
 .projectContainer {
@@ -202,13 +210,20 @@ hr {
   /*background-color: orange;*/
   width: 450px;
   border: none;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .formButton {
   width: 70px;
   height: 40px;
   font-size: 20px;
+  /*margin-top: -15px;*/
+  /*display: inline-block;*/
+}
+
+.formButtonContainer {
+  margin-top: -15px;
+  /*background-color: pink;*/
 }
 
 .commentLabel {
@@ -216,7 +231,13 @@ hr {
   width: 50px;
 }
 
+.inputTitle {
+  width: 250px;
+  height: 25px;
+}
+
 #contactComment {
-  width: 200px;
-  height: 20px;
+  margin-top: 9px;
+  width: 350px;
+  height: 100px;
 }

@@ -3,13 +3,16 @@ console.log('js connected');
 $(function() {
   console.log("Dom ok");
 
+  $('.nameTitle').animate({"opacity":"1"}, 1500);
+  setTimeout($('.bubble').animate({"opacity":"1"}, 1500), 2000);
+
   // page position bubble effects
   $(window).scroll(function(){
     var positionNow = $(document).scrollTop();
-    // console.log(positionNow);
-    var limiting = 400;
+    console.log(positionNow);
+    var limiting = 200;
     if(positionNow <= limiting){
-      // console.log("change more!!!");
+      console.log("change more!!!");
       $('.bubble').animate({
         "width":"200px",
         "height": "200px",
@@ -17,7 +20,7 @@ $(function() {
         "lineHeight": "120px"
       }, 10);
     } if(positionNow > limiting) {
-      // console.log("change less!!!");
+      console.log("change less!!!");
       $('.bubble').animate({
         "width":"150px",
         "height": "150px",
