@@ -61,6 +61,16 @@ hr {
   display: block;
 }
 
+.titleContainer {
+  background-color: pink;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.nameTitle {
+  border: 1px solid black;
+}
+
 
 .bubbleContainer {
   background-color: lightgrey;
@@ -120,6 +130,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 800px;
+  height: 600px;
 }
 
 .modals{
@@ -141,8 +153,8 @@ hr {
 
 /*----PROJECTS MODAL----*/
 #modalProjects {
-  /*background-color: blue;*/
-  width: 800px;
+  /*background-color: pink;*/
+  width: 700px;
   height: 500px;
   /*overflow-y: scroll;*/
   display: flex;
@@ -161,7 +173,7 @@ hr {
   display: inline-block;
   margin: 5px;
   height: 300px;
-  width: 350px;
+  width: 335px;
 }
 .projHeader {
   margin: 30px 35px;
