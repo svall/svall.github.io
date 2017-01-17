@@ -50,7 +50,7 @@ hr {
   position: fixed;
   font-size: 40px;
   margin: 10px;
-  top: 10px;
+  top: 25%;
 }
 
 #fixedLetters {
@@ -183,14 +183,35 @@ hr {
   height: 300px;
   width: 335px;
 }
+
+.eachProjectPopup {
+  background-color: grey;
+  width: 335px;
+  height: 300px;
+  position: absolute;
+  opacity: 0.98;
+  visibility: hidden;
+}
+
+.description {
+  /*background-color: red;*/
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  /*margin: auto;*/
+}
+
 .projHeader {
   margin: 30px 35px;
 }
+
 .projectDescr {
   display: inline-block;
   width: 400px;
   margin: auto 35px;
 }
+
 .imgProject {
   display: inline-block;
   height: 60%;
@@ -199,6 +220,7 @@ hr {
   /*width: 350px;*/
   /*margin: 0 auto;*/
 }
+
 .simonSaysImg {
   height: 50%;
   width: 50%;

@@ -85,5 +85,25 @@ $(function() {
     $('#modalAboutMe').css({'visibility': 'visible'});
   }));
 
+  // Popup description for projects
+  $('#proj1').on('mouseover', (function(event) {
+    $('#proj1desc').css({'visibility': 'visible'});
+  }));
+  $('#proj1').on('mouseout', (function(event) {
+    $('#proj1desc').css({'visibility': 'hidden'});
+  }));
+  $('#proj2').on('mouseover', (function(event) {
+    $('#proj2desc').css({'visibility': 'visible'});
+  }));
+  $('#proj2').on('mouseout', (function(event) {
+    $('#proj2desc').css({'visibility': 'hidden'});
+  }));
+  $('#proj3').on('mouseover', (function(event) {
+    $('#proj3desc').css({'visibility': 'visible'});
+  }));
+  $('#proj3').on('mouseout', (function(event) {
+    $('#proj3desc').css({'visibility': 'hidden'});
+  }));
+
 
 });
