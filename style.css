@@ -226,6 +226,10 @@ hr {
   width: 50%;
 }
 
+.alinks {
+  text-decoration: none;
+  color: black;
+}
 
 /*----CONTACT MODAL----*/
 #modalContact {
